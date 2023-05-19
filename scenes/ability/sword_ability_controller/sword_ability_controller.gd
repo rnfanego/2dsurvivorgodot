@@ -8,7 +8,6 @@ const MAX_RANGE = 150
 func _ready():
 	$Timer.timeout.connect(on_timer_timeout)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
