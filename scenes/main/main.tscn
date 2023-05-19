@@ -8,6 +8,8 @@
 [node name="Main" type="Node"]
 
 [node name="GameCamera" parent="." instance=ExtResource("1_din2g")]
+position_smoothing_speed = 15.0
+rotation_smoothing_speed = 15.0
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_vb3yk")
@@ -17,5 +19,20 @@ layer_0/tile_data = PackedInt32Array(1769524, 0, 4, 1703988, 65536, 4, 1638452, 
 [node name="player" parent="." instance=ExtResource("1_xbdki")]
 position = Vector2(214, 134)
 
-[node name="BasicEnemy" parent="." instance=ExtResource("4_u0gau")]
+[node name="BasicEnemy" parent="." groups=["enemy"] instance=ExtResource("4_u0gau")]
 position = Vector2(476, 260)
+
+[node name="BasicEnemy2" parent="." groups=["enemy"] instance=ExtResource("4_u0gau")]
+position = Vector2(208, 534)
+
+[node name="BasicEnemy3" parent="." groups=["enemy"] instance=ExtResource("4_u0gau")]
+position = Vector2(1022, 493)
+
+[node name="BasicEnemy4" parent="." groups=["enemy"] instance=ExtResource("4_u0gau")]
+position = Vector2(654, 474)
+
+[node name="BasicEnemy5" parent="." groups=["enemy"] instance=ExtResource("4_u0gau")]
+position = Vector2(887, 246)
+
+[node name="BasicEnemy6" parent="." groups=["enemy"] instance=ExtResource("4_u0gau")]
+position = Vector2(670, 110)

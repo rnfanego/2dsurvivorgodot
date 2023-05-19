@@ -13,6 +13,7 @@ func _process(delta):
 	var direction = movement_vector.normalized()
 	velocity = direction * MAX_SPEED
 	move_and_slide()
+	global_position = global_position.round()
 	
 func get_movement_vector():
 	var x_direction = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
